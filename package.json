@@ -1,0 +1,23 @@
+{
+  "name": "todoserverwithnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laxmiprasanna3/todoserverwithnode.js.git"
+  },
+  "author": "laxmi prasanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laxmiprasanna3/todoserverwithnode.js/issues"
+  },
+  "homepage": "https://github.com/laxmiprasanna3/todoserverwithnode.js#readme",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
