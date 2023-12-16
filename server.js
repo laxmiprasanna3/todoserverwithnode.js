@@ -26,7 +26,21 @@ if(url==="/todos"){
 }else if(method==="PUT"){
 
 }else if(method==="DELETE"){
-
+    let body="";
+    req.on('error',(err)=>{
+        console.log(err)
+    }).on('data',(chunk)=>{
+        body+=chunk
+    }).on('end',()=>{
+        body=JSON.parse(body);
+        let delethis=body.item;
+        for(let i=0;i<todolist.length;i++){
+            if(todolist[i]===delethis){
+                todolist.splice(i,1);
+                break;
+            }
+        }
+    })
 }
 else{
     res.writeHead(404);
